@@ -1,0 +1,73 @@
+@media (max-width: 768px) {
+    body{font-size:12px;}
+    .top .top-c .menu{
+        display: block;
+    }
+    
+    .top .top-c .nav {
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        height: 220px;
+        text-align: center;
+        background: rgba(255,255,255,.8);
+    }
+    .top .top-c .open {
+        display: block;
+    }
+    .top .top-c .nav .nav-item:hover a::after{
+        margin-left: 0;
+    }
+    .top .top-c .nav .nav-item {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        height: 40px;
+    }
+    .top .top-c .nav .nav-item.active {
+        border-bottom: none
+    }
+    .top .top-c .nav .nav-item:hover{
+        border-bottom:none
+    }
+    .banner .swiper-container .button{
+        display: none
+    }
+    .commit h2{
+        font-size:16px
+    }
+    .commit h4{
+        font-size:12px
+    }
+    .jewelry .jewelry-c .jewelry-product {
+        flex-direction: column
+    }
+    .actives {
+        height: 1000px;
+    }
+    .actives .commit-more{
+        top: 860px;
+    }
+    .actives .actives-list .actives-item{
+       width: 250px;
+       height: 250px;
+    }
+    .designers .designers-c .designers-list{
+        flex-direction: column
+    }
+    .actives .actives-list .box{
+        width: 90%;
+    }
+    .actives .actives-list {
+        flex-direction: column;
+    }
+    .foot .foot-c {
+        flex-direction: column;
+        text-align: center
+    }
+    .foot .foot-c .join {
+        width: 253px;
+    }
+}

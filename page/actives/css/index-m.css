@@ -1,0 +1,56 @@
+@media (max-width: 768px) {
+    .top .top-c .menu{
+        display: block;
+    }
+    
+    .top .top-c .nav {
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        height: 220px;
+        text-align: center;
+        background: rgba(255,255,255,.8);
+    }
+    .top .top-c .open {
+        display: block;
+    }
+    .top .top-c .nav .nav-item:hover a::after{
+        margin-left: 0;
+    }
+    .top .top-c .nav .nav-item {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        height: 40px;
+    }
+    .top .top-c .nav .nav-item.active {
+        border-bottom: none
+    }
+    .top .top-c .nav .nav-item:hover{
+        border-bottom:none
+    }
+    .container .swiper-container .swiper-wrapper .swiper-slide .details-text .text {
+        text-overflow: -o-ellipsis-lastline;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+    .commit h2{
+        font-size:16px
+    }
+    .commit h4{
+        font-size:12px
+    }
+    .foot .foot-c {
+        flex-direction: column;
+        text-align: center
+    }
+    .foot .foot-c .join {
+        width: 253px;
+    }
+}

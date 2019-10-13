@@ -1,0 +1,255 @@
+html,
+body {
+    height: 100%;
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 9999;
+}
+
+.top .top-c {
+    position: relative;
+    width: 89%;
+    height: 80px;
+    padding: 0 5.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .top-c .logo {
+    width: 14.75%;
+    height: 43.75%;
+}
+
+.top .top-c img {
+    width: 100%;
+    height: 100%;
+    background-size: contain
+}
+
+.top .top-c .menu {
+    display: none;
+    width:4.5%;
+    height: 37.5%;
+    background: url(../imgs/menu.png);
+    background-size: 100% 100%
+}
+
+.top .top-c .nav {
+    position: absolute;
+    top: 0;
+    left: 39.16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+    color: black
+}
+
+.top .top-c .nav .nav-item {
+    width: 91.5px;
+    height: 49px;
+    text-align: center;
+    line-height: 49px;
+}
+
+.top .top-c .nav .nav-item.active a{
+    box-shadow: 0 2px 0px #969697
+}
+
+.top .top-c .nav .nav-item a {
+    width: 100%;
+    color: #969697;
+}
+
+
+.top .top-c .nav .nav-item:hover a {
+    color: black;
+    transition: .2s ease;
+    font-size: 18px;
+    box-shadow: 0 2px 0px #969697
+}
+
+.banner {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.banner img {
+    width: 100%;
+    height: 200px;
+    background-size: contain;
+    opacity: 1
+}
+
+.banner:hover img {
+    opacity: 0.5;
+    transition: .8s ease
+}
+
+.container {
+    width: 100%;
+    margin-bottom: 60px
+}
+
+.commit {
+    width: 72.67%;
+    margin: 50px auto 80px;
+    text-align: center;
+}
+
+.commit h2 {
+    font-size: 30px;
+    color: #444444;
+}
+
+.commit h4 {
+    margin: 10px;
+    font-size: 13px;
+    color: #c1c1c1;
+}
+
+.container .container-c {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.container .container-c .about-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.container .container-c .about-content span{
+    width: 420px;
+    margin-right: 20px
+}
+.container .container-c .about-content span img{
+    width: 420px;
+    height: 315px;
+}
+.container .container-c .about-content .text{
+    width: 660px;
+    height: 100%;
+}
+.container .container-c  p{
+    text-indent: 2em;
+    color: #6B6B6B;
+    margin:0 auto 10px;
+    font-size: 16px;
+    line-height: 25px;
+}
+.container .container-c .shat-us{
+   width: 100%;
+   display: flex;
+   align-items: center;
+}
+.container .container-c .chat-us img{
+   width: 100%;
+   background-size: cover;
+}
+.container .container-c .chat-us h3{
+    font-size: 26px;
+    color: #373737;
+}
+.container .container-c .add{
+   width: 100%;
+   display: flex;
+   justify-content: space-between
+}
+.container .container-c .add #allmap{
+    width: 475px;
+    height: 270px;
+    overflow: hidden;
+    font-family: "微软雅黑";
+}
+.container .container-c .add .address{
+   width: 50%;
+   color: #373737;
+   font-size: 18px;
+   text-align: center
+}
+
+
+.foot {
+    width: 100%;
+    background-color: #F7F5FA;
+    color: #4d4d4d;
+}
+
+.foot .foot-c {
+    width: 89%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align-last: justify;   
+}
+
+.foot .foot-c .record p {
+    font-size: 12px;
+    color: #323232;
+}
+
+.foot .foot-c .record .text {
+    margin: 20px 0 13px;
+}
+
+.foot .foot-c .join {
+    width: 31%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot .foot-c .join .join-us {
+    font-size: 12px;
+    color: #323232;
+}
+
+.foot .foot-c .join a {
+    font-size: 12px;
+    color: #323232;
+}
+
+.foot .foot-c .toup {
+    position: absolute;
+    right:30px;
+    display: none;
+    transition:all .5s ease;
+}
+
+.foot .foot-c .toup span {
+    display: block;
+    opacity: 0.5;
+    height: 52px;
+    width: 52px;
+}
+
+.foot .foot-c .toup span:hover {
+    animation: infinite bounce delay-2s;
+}
+
+.foot .foot-c .toup .toup-icon {
+    background: url(..//imgs/top.jpg);
+}
+
+.foot .foot-c .toup .phone-icon {
+    background: url(../imgs/tel.jpg);
+}
+
+.foot .foot-c .toup span:hover {
+    animation-name: heartBeat;
+    animation-duration: 1s;
+    animation-delay: .1s;
+    animation-iteration-count: 1
+}

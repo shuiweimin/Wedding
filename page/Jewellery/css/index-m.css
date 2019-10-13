@@ -1,0 +1,77 @@
+@media (max-width: 768px) {
+    .top .top-c .menu{
+        display: block;
+    }
+    
+    .top .top-c .nav {
+        position: absolute;
+        display: none;
+        left: 0;
+        top: 60px;
+        width: 100%;
+        height: 220px;
+        text-align: center;
+        background: rgba(255,255,255,.8);
+    }
+    .top .top-c .open {
+        display: block;
+    }
+    .top .top-c .nav .nav-item:hover a::after{
+        margin-left: 0;
+    }
+    .top .top-c .nav .nav-item {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+        height: 40px;
+    }
+    .top .top-c .nav .nav-item.active {
+        border-bottom: none
+    }
+    .top .top-c .nav .nav-item:hover{
+        border-bottom:none
+    }
+    .container .container-c .wedding-details {
+        flex-direction: column
+    }
+    .container .container-c .wedding-details .text h3 {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    
+    .container .container-c .wedding-details .text h4 {
+        font-size: 12px;
+        margin-top: 10px;
+        text-indent: 58px;
+    }
+    
+    .container .container-c .wedding-details .text p {
+        font-size: 12px;
+        margin: 12px auto 0;
+    }
+    .container .container-c img{
+        display: block;
+        margin: 0 auto;
+    }
+    .container .container-c .wedding-details-size img{
+        width:80%;
+    }
+    .container .container-c .wedding-details-size .text{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center
+    }
+    .commit h2{
+        font-size:16px
+    }
+    .commit h4{
+        font-size:12px
+    }
+    .foot .foot-c {
+        flex-direction: column;
+        text-align: center
+    }
+    .foot .foot-c .join {
+        width: 253px;
+    }
+}

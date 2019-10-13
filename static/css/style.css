@@ -1,0 +1,625 @@
+html,
+body {
+    height: 100%;
+    /* 悼念模式 */
+    /* filter: grayscale(100%); */
+}
+
+.top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: 9999;
+}
+
+.top .top-c {
+    position: relative;
+    width: 89%;
+    height: 80px;
+    padding: 0 5.5%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top .top-c .logo {
+    width: 14.75%;
+    height: 43.75%;
+}
+
+.top .top-c img {
+    width: 100%;
+    height: 100%;
+    background-size: contain
+}
+
+.top .top-c .menu {
+    display: none;
+    width:4.5%;
+    height: 37.5%;
+    background: url(../imgs/menu.png);
+    background-size: 100% 100%
+}
+
+.top .top-c .nav {
+    position: absolute;
+    top: 0;
+    left: 39.16%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 60%;
+    height: 100%;
+    color: black
+}
+
+.top .top-c .nav .nav-item {
+    width: 91.5px;
+    height: 49px;
+    text-align: center;
+    line-height: 49px;
+}
+
+.top .top-c .nav .nav-item.active a{
+    box-shadow: 0 2px 0px #969697
+}
+
+.top .top-c .nav .nav-item a {
+    width: 100%;
+    color: #969697;
+}
+
+.top .top-c .nav .nav-item:hover a {
+    color: black;
+    transition: .2s ease;
+    font-size: 18px;
+    box-shadow: 0 2px 0px #969697
+}
+
+.banner {
+    margin-top: 80px;
+    width: 100%;
+}
+
+.banner .swiper-container .swiper-wrapper .swiper-slide img {
+    width: 100%;
+    background-size: contain
+}
+
+.banner .swiper-container .swiper-pagination-bullet {
+    width: 20px;
+    height: 3px;
+    margin: 0 5px;
+    border-radius: 3px;
+    background-color: RGB(245, 246, 250);
+    opacity: 1;
+}
+
+.banner .swiper-container .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: gray
+}
+
+.banner .swiper-container .button {
+    width: 50px;
+    height: 79px;
+    background-color: rgba(0, 0, 0, 0.1);
+    color: #e4e5e8;
+}
+
+.main {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.main .main-c {
+    width: 89%;
+    margin: 0 auto;
+}
+
+.commit {
+    width: 72.67%;
+    margin: 50px auto 20px;
+    text-align: center;
+}
+
+.commit h2 {
+    font-size: 20px;
+    color: #444444;
+}
+
+.commit h4 {
+    margin: 10px;
+    font-size: 13px;
+    color: #c1c1c1;
+}
+
+.main .main-c .swiper-container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.main .main-c .swiper2 .append-buttons {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main .main-c .swiper2 a {
+    width: 22%;
+    ;
+    height: 14%;
+    margin: 0 3%;
+    color: #4d4d4d;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.main .main-c .swiper2 .swiper-pagination-bullet-active::after {
+    content: '';
+    display: block;
+    margin: 10px auto;
+    width: 4px;
+    height: 4px;
+    background-color: currentColor;
+    border-radius: 50%;
+}
+
+.main .main-c .swiper2 .swiper-wrapper {
+    width: 100%;
+    height: 360px;
+    margin-top: 100px
+}
+
+.main .main-c .swiper2 .swiper-wrapper .swiper-slide {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    text-align: center
+}
+
+.main .main-c .swiper2 .swiper-wrapper .swiper-slide img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.main .main-c .swiper2 .swiper-wrapper .swiper-slide .mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: transparent;
+}
+
+.main .main-c .swiper2 .swiper-wrapper .swiper-slide .mask h3 {
+    font-size: 14px;
+    margin: 120px auto 30px auto;
+}
+
+.main .main-c .swiper2 .swiper-wrapper .swiper-slide .mask p {
+    font-size: 12px;
+    line-height: 2;
+}
+
+.main .main-c .swiper2 .swiper-wrapper .swiper-slide:hover {
+    filter: grayscale(0);
+    transition: all 1s ease-in-out;
+}
+
+.main .main-c .swiper2 .swiper-wrapper .swiper-slide:hover .mask {
+    color: rgb(253, 246, 246, .99);
+    transition: all 1s ease-in-out;
+}
+
+.commit-more {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.commit-more a {
+    display: block;
+    color: #2d2d2d;
+    width: 148px;
+    height: 43px;
+    border: 1px solid #b9ab77;
+    line-height: 46px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.jewelry {
+    width: 100%;
+}
+
+.jewelry .jewelry-c {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 89%;
+}
+
+.jewelry .jewelry-c .jewelry-product {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jewelry .jewelry-c .jewelry-product .box {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.jewelry .jewelry-c .jewelry-product .item {
+    position: relative;
+    width: 70%;
+    height: 90%;
+    margin: 0 auto;
+}
+
+.jewelry .jewelry-c .jewelry-product .item img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+.jewelry .jewelry-c .jewelry-product .item .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+}
+
+.jewelry .jewelry-c .jewelry-product .item .text .bar {
+    padding-left: 10px;
+}
+
+.jewelry .jewelry-c .jewelry-product .item .text h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: transparent
+}
+
+.jewelry .jewelry-c .jewelry-product .item .text p {
+    font-size: 12px;
+    color: transparent;
+    width: 85%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.jewelry .jewelry-c .jewelry-product .item:hover img {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-delay: .01s;
+    animation-iteration-count: 1
+}
+.jewelry .jewelry-c .jewelry-product .item:hover .text {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-delay: .1s;
+    animation-iteration-count: 1;
+    background-color: rgba(51, 22, 22, 0.3);
+    transition: all 1s ease-in-out;
+}
+
+.jewelry .jewelry-c .jewelry-product .item:hover .text h3 {
+    color: #fff;
+    transition: all 1s ease-in-out;
+}
+
+.jewelry .jewelry-c .jewelry-product .item:hover .text p {
+    color: #c1c1c1;
+    transition: all 1s ease-in-out;
+}
+
+.actives {
+    position: relative;
+    width: 100%;
+    height:685px;
+}
+.actives .commit-more{
+    position: absolute;
+    top: 510px;
+    width: 100%;
+    height: 45px;
+}
+
+.actives .actives-c {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 354px;
+    background: url(../imgs/active.jpg) ;
+    background-size: cover;
+}
+
+.actives .actives-list {
+    position: absolute;
+    top: 170px;
+    left: 5.5%;
+    width: 89%;
+    display: flex;
+    align-items: center;
+}
+
+.actives .actives-list .box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.actives .actives-list .actives-item {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    box-shadow: 1px 0px 10px #787878;
+}
+
+.actives .actives-list .actives-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.actives .actives-list .actives-item .bot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 95%;
+    height: 95%;
+    margin: auto;
+    color: transparent;
+}
+
+.actives .actives-list .actives-item .bot .text {
+    width: 80%;
+    height: 80%;
+    text-align: left;
+    padding: 20px 25px 30px;
+}
+
+.actives .actives-list .actives-item .bot .text h3 {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.actives .actives-list .actives-item .bot .text h3 span {
+    font-size: 15px;
+}
+
+.actives .actives-list .actives-item .bot .text h4 {
+    font-size: 15px;
+    margin: 60px 0 30px
+}
+
+.actives .actives-list .actives-item .bot .text p {
+    font-size: 12px;
+    text-overflow: -o-ellipsis-lastline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+    margin-bottom: 60px;
+}
+
+.actives .actives-list .actives-item .bot .text a {
+    font-size: 12px;
+    color: transparent;
+}
+
+.actives .actives-list .actives-item:hover .bot {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: 1s ease;
+}
+
+.actives .actives-list .actives-item:hover .text h3 {
+    color: #787878;
+    transition: 1s ease;
+}
+
+.actives .actives-list .actives-item:hover .text h4 {
+    color: #1B1B1B;
+    transition: 1s ease;
+}
+
+.actives .actives-list .actives-item:hover .text p {
+    color: #787878;
+    transition: 1s ease;
+}
+
+.actives .actives-list .actives-item:hover .text a {
+    transition: 1s ease;
+    color: #787878;
+}
+
+.designers {
+    width: 100%;
+    background-color: #4D4D4D;
+}
+
+.designers .designers-c {
+    width: 89%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.designers .designers-c .bot {
+    width: 100%;
+    height: 10px;
+}
+
+.designers .designers-c .title {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.designers .designers-c .title h2 {
+    color: #eceaea
+}
+
+.designers .designers-c .designers-list {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.designers .designers-c .designers-list .designers-item {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 0;
+    color: #b9b9b9;
+}
+
+.designers .designers-c .designers-list .designers-item span {
+    display: inline-block;
+    border-radius: 50%;
+    background-size: 100%;
+    width: 180px;
+    height: 180px;
+    margin-left: -10px;
+}
+
+.designers .designers-c .designers-list .designers-item .designer-avatar1 {
+    background: url(../imgs/designers1.jpg);
+}
+
+.designers .designers-c .designers-list .designers-item .designer-avatar2 {
+    background: url(../imgs/designers2.jpg);
+}
+
+.designers .designers-c .designers-list .designers-item .designer-avatar3 {
+    background: url(../imgs/designers3.jpg);
+}
+
+.designers .designers-c .designers-list .designers-item h3 {
+    color: #f7f5f5;
+    font-size: 24px;
+    margin: 25px 0 10px;
+}
+
+.designers .designers-c .designers-list .designers-item h4 {
+    font-size: 12px;
+    margin: 10px 0 18px;
+}
+
+.designers .designers-c .designers-list .designers-item p {
+    font-size: 12px;
+    line-height: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.designers .designers-c .designers-list .designers-item a {
+    display: inline-block;
+    font-size: 12px;
+    color: #b9b9b9;
+    border-bottom: 1px solid;
+    width: 150px;
+    line-height: 3;
+    margin: 60px 0;
+}
+
+.foot {
+    width: 100%;
+    color: #4d4d4d;
+}
+
+.foot .foot-c {
+    width: 89%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align-last: justify;
+
+}
+
+.foot .foot-c .record p {
+    font-size: 12px;
+    color: #323232;
+}
+
+.foot .foot-c .record .text {
+    margin: 20px 0 13px;
+}
+
+.foot .foot-c .join {
+    width: 31%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.foot .foot-c .join .join-us {
+    font-size: 12px;
+    color: #323232;
+}
+
+.foot .foot-c .join a {
+    font-size: 12px;
+    color: #323232;
+}
+
+.foot .foot-c .toup {
+    position: absolute;
+    right:30px;
+    display: none;
+    transition:all .5s ease;
+}
+
+.foot .foot-c .toup span {
+    display: block;
+    opacity: 0.5;
+    height: 52px;
+    width: 52px;
+}
+
+.foot .foot-c .toup span:hover {
+    animation-name: heartBeat;
+    animation-duration: 1s;
+    animation-delay: .1s;
+    animation-iteration-count: 1
+}
+
+.foot .foot-c .toup .toup-icon {
+    background: url(../imgs/top.jpg);
+}
+
+.foot .foot-c .toup .phone-icon {
+    background: url(../imgs/tel.jpg);
+}
